@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background: #fff;
 }
 
 .App-logo {
@@ -7,16 +8,52 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 100px;
+  height: 120px;
+  margin: 0;
+  background: #000;
+  color: #fff;
 }
 
-.App-link {
-  color: #09d3ac;
+.stacks {
+  display: flex;
+  height: calc(100vh - 120px);
+  flex-wrap: wrap;
+}
+
+.stacks .stack {
+  flex: 0 0 33.3%;
+  height: 300px;
+  display: flex;
+  overflow: hidden;
+}
+
+.stacks .stack img {
+  width: 100%;
+  min-height: 100%;
+  transform: translateY(0);
+  transition: transform 5s linear, filter 0.3s;
+  filter: brightness(0.5);
+  /* object-fit: cover; */
+}
+
+.stacks .stack img:hover {
+  transform: translateY(calc(-100% + 300px));
+  filter: brightness(1);
+}
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    font-size: 40px;
+    height: 50px;
+  }
+  .stacks .stack {
+    flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .stacks .stack {
+    flex: 0 0 100%;
+  } 
 }
