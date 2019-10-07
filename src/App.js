@@ -7,49 +7,47 @@ function App() {
   const stacks = [
     {
       "website_url": "https://applab3react.herokuapp.com",
-      "image_name": "hank.jpg"
+      "image_name": "https://i.imgur.com/BYkLacm.jpg"
     },
     {
       "website_url": "https://ember-web-app.herokuapp.com/",
-      "image_name": "kyle.jpg"
+      "image_name": "https://i.imgur.com/PmtvRGx.jpg"
     },
     {
       "website_url": "https://corbin-ko-homework-3.herokuapp.com/",
-      "image_name": "corbin.jpg"
+      "image_name": "https://i.imgur.com/98ynfzX.jpg"
     },
     {
       "website_url": "https://ktanchay-thestack.herokuapp.com/",
-      "image_name": "kimmy.jpg"
+      "image_name": "https://i.imgur.com/vE6ZoO2.jpg"
     },
     {
       "website_url": "https://fbenhw.herokuapp.com/",
-      "image_name": "filip.jpg"
+      "image_name": "https://i.imgur.com/WPxVWnm.jpg"
     },
     {
       "website_url": "https://hireact7.herokuapp.com/",
-      "image_name": "cyndi.jpg"
+      "image_name": "https://i.imgur.com/j44QQex.jpg"
     },
     {
       "website_url": "https://cool-app666.herokuapp.com/",
-      "image_name": "buheshagoulilun.jpg"
+      "image_name": "https://i.imgur.com/5fsv8Fh.jpg"
     },
     {
       "website_url": "https://harrisonchen-app.herokuapp.com",
-      "image_name": "harrison.jpg"
+      "image_name": "https://i.imgur.com/iSNwHoD.jpg"
     },
     {
       "website_url": "https://reality10.herokuapp.com/",
-      "image_name": "tuba.jpg"
+      "image_name": "https://i.imgur.com/VgYdftg.jpg"
     }
   ];
-
-  const images_path = 'assets/'
 
   const links = stacks.map((link) => {
     return (
       <div className="stack">
         <a className="stack-link" href={link.website_url} target="_blank">
-          <img className="stack-image" src={images_path + link.image_name}></img>
+          <img className="stack-image" src={link.image_name}></img>
         </a>
       </div>
     );
