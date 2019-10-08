@@ -19,7 +19,8 @@ function App() {
     },
     {
       "website_url": "https://ktanchay-thestack.herokuapp.com/",
-      "image_name": "https://i.imgur.com/vE6ZoO2.jpg"
+      "image_name": "https://i.imgur.com/vE6ZoO2.jpg",
+      "alt": "Stack Preview by Kimmy"
     },
     {
       "website_url": "https://fbenhw.herokuapp.com/",
@@ -47,7 +48,7 @@ function App() {
     return (
       <div className="stack">
         <a className="stack-link" href={link.website_url} target="_blank">
-          <img className="stack-image" src={link.image_name}></img>
+          <img className="stack-image" alt="Preview of the Stack assignment by App Lab Student" src={link.image_name}></img>
         </a>
       </div>
     );
